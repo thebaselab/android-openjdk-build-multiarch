@@ -1,5 +1,7 @@
 #!/bin/bash
 set -e
+export BUILD_IOS=1
+
 if [ "$BUILD_IOS" == "1" ]; then
   export TARGET=aarch64-apple-darwin18.2
 else

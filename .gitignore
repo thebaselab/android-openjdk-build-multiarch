@@ -17,3 +17,7 @@ ios-missing-include/Xm
 dizout
 jreout
 jdkout
+libffi-3.4.2/
+*.tar.xz
+*.tar.gz
+.DS_Store

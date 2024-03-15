@@ -68,9 +68,9 @@ export LIBFFI_LIBS="-L$LIBFFI_DIR/lib"
 #   --with-sysroot="$(xcrun --sdk iphoneos --show-sdk-path)" \
 bash ./configure \
     --openjdk-target=$TARGET_PHYS \
-    --with-extra-cflags="$CFLAGS" \
-    --with-extra-cxxflags="$CFLAGS" \
-    --with-extra-ldflags="$LDFLAGS" \
+    --with-extra-cflags="$CFLAGS -miphoneos-version-min=15.0" \
+    --with-extra-cxxflags="$CFLAGS -miphoneos-version-min=15.0" \
+    --with-extra-ldflags="$LDFLAGS-miphoneos-version-min=15.0" \
     --enable-option-checking=fatal \
     --with-jdk-variant=normal \
     --with-jvm-variants="${JVM_VARIANTS/AND/,}" \

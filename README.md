@@ -11,6 +11,7 @@ Based on http://openjdk.java.net/projects/mobile/android.html
 
 #### iOS
 - You should get latest Xcode (tested with Xcode 12).
+- Code: `ci_build_arch_aarch64.sh`
 
 ### Platform and architecture specific environment variables
 <table>

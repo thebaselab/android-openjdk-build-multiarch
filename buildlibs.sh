@@ -9,10 +9,10 @@ if [ "$BUILD_IOS" == "1" ]; then
 
   echo "Building libffi"
   cd libffi-3.4.2
-  python generate-darwin-source-and-headers.py --only-ios
+  python3 generate-darwin-source-and-headers.py --only-ios
   xcodebuild -arch arm64
   cd build_iphoneos-arm64
-  make prefix=`pwd` install
+  sudo make prefix=`pwd` install
   cd ../..
 
   echo "Building Freetype"
